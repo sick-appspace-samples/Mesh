@@ -21,7 +21,7 @@ decoration2:setSurfaceColor(100, 200, 30)
 decoration3 = View.MeshDecoration.create()
 decoration3:setSurfaceColor(30, 100, 200)
 
-local viewer = View.create()
+local viewer = View.create('viewer3D1')
 viewer:clear()   
 viewer:addMesh(components[1], decoration1)
 viewer:addMesh(components[2], decoration2)

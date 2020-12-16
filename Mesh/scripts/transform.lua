@@ -23,7 +23,7 @@ local decoration2 = View.MeshDecoration.create()
 decoration2:setSurfaceColor(30, 100, 200)
 decoration2:setVisibleFaces("FRONT_AND_BACK")
 
-local viewer = View.create()
+local viewer = View.create('viewer3D1')
 viewer:clear()   
 viewer:addMesh(mesh, decoration)
 viewer:addMesh(transformedMesh, decorationTransformed)

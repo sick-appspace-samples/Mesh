@@ -35,7 +35,7 @@ decoration:setSurfaceColor(200, 100, 30)
 decoration:setVisibleFaces("FRONT_AND_BACK")
 
 -- View all generate meshes
-local viewer = View.create()
+local viewer = View.create('viewer3D1')
 viewer:clear()
 viewer:addMesh(meshes, decoration)
 viewer:present()

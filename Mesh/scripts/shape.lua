@@ -10,7 +10,7 @@ decoration:setFillColor(200, 100, 30, 255)
 decoration:setLineColor(0,0,0, 255)
 decoration:setLineWidth(2)
 
-local viewer = View.create()
+local viewer = View.create('viewer3D1')
 viewer:clear()   
 viewer:addShape(polygons, decoration) -- each polygon is a shape3D
 viewer:present()
