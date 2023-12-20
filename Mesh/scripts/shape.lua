@@ -1,5 +1,5 @@
 ---------------------------------------------------------------------------
--- Convert a mesh to polygon shapes (set of triangles) 
+-- Convert a mesh to polygon shapes (set of triangles)
 ---------------------------------------------------------------------------
 
 local mesh = Mesh.load("resources/Hinge.ply")
@@ -11,6 +11,6 @@ decoration:setLineColor(0,0,0, 255)
 decoration:setLineWidth(2)
 
 local viewer = View.create('viewer3D1')
-viewer:clear()   
+viewer:clear()
 viewer:addShape(polygons, decoration) -- each polygon is a shape3D
 viewer:present()

@@ -10,7 +10,7 @@ decoration:setSurfaceColor(200, 100, 30)
 decoration:setVisibleFaces("FRONT_AND_BACK")
 
 local viewer = View.create('viewer3D1')
-viewer:clear()   
+viewer:clear()
 viewer:addMesh(mesh, decoration)
 viewer:addPointCloud(cloud)
 viewer:present()

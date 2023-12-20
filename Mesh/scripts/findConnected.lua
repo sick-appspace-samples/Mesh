@@ -12,7 +12,7 @@ print("Complete mesh: " .. mesh:toString())
 -- Separate meshes
 local components = Mesh.findConnected(mesh)
 print("Number of separate meshes found:" .. #components)
-   
+
 -- View result
 decoration1 = View.MeshDecoration.create()
 decoration1:setSurfaceColor(200, 100, 30)
@@ -22,7 +22,7 @@ decoration3 = View.MeshDecoration.create()
 decoration3:setSurfaceColor(30, 100, 200)
 
 local viewer = View.create('viewer3D1')
-viewer:clear()   
+viewer:clear()
 viewer:addMesh(components[1], decoration1)
 viewer:addMesh(components[2], decoration2)
 viewer:addMesh(components[3], decoration3)

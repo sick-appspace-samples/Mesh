@@ -32,7 +32,7 @@ exactDecoration:setLineColor(0, 255, 0)
 exactDecoration:setLineWidth(10)
 
 local viewer = View.create('viewer3D1')
-viewer:clear()   
+viewer:clear()
 viewer:addMesh(mesh, decoration)
 viewer:addShape({points[1], approx[1], exact[1]}, pointDecoration)
 viewer:addShape(lineApprox, approxDecoration)
